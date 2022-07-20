@@ -1,0 +1,47 @@
+@media screen and (max-width:600px){
+
+    #search-container {
+        width: 400px !important;
+    }
+    #label1 {
+        width: 400px !important;
+    }
+    #table {
+        width: 400px !important;
+    }
+    .history {
+        width: 400px !important;
+
+    }
+    #line {
+        width: 400px !important;
+    }
+    #search-box {
+        width: 400px !important;
+    }
+
+}
+
+@media screen and (max-width:450px){
+
+    #search-container {
+        width: 300px !important;
+    }
+    #label1 {
+        width: 300px !important;
+    }
+    #table {
+        width: 300px !important;
+    }
+    .history {
+        width: 300px !important;
+
+    }
+    #line {
+        width: 300px !important;
+    }
+    #search-box {
+        width: 300px !important;
+    }
+
+}

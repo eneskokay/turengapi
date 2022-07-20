@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link name="text/css" rel="stylesheet" href="main.css">
+    <link name="text/css" rel="stylesheet"  href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <title>Turkish&English Dictionary</title>
+</head>
+
+<body>
+
+        <div id="container">
+            <div id="growth"></div>
+        <div id="search-container" class="searchRadius">
+            <label id="label1" class="searchRadius" for="search-input">
+        <div id="search-box">
+            <svg id="search-svg" ><path id="search-path" d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg>
+            <form id="search-form">
+            <input id="search-input" autocomplete="off" placeholder="Find your word" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Find your word'"> <!-- Burada onfocus ve onbluru place holderi silmek ve geri yüklemek için kullandık.-->
+        </form>
+        </div>
+
+    </label>
+
+        <div class="history none">
+            <div id="line"></div>
+            <div id="histories">
+        </div>
+        </div>
+
+    </div>
+    <span id="error" class="none"></span>
+        <table id="table" class="none">
+            <thead>
+                <tr>
+                    <td height="30"></td>
+                    <td height="30">Turkish</td>
+                    <td height="30">English</td>
+                </tr>
+            </thead>
+
+        <tbody>
+            <tr>
+                <td height="30">1</td>
+                <td height="30">Merhaba</td>
+                <td height="30">Hello</td>
+            </tr>
+            <tr>
+                <td height="30">1</td>
+                <td height="30">Merhaba</td>
+                <td height="30">Hello</td>
+            </tr>
+            <tr>
+                <td height="30">1</td>
+                <td height="30">Merhaba</td>
+                <td height="30">Hello</td>
+            </tr>
+            <tr>
+                <td height="30">1</td>
+                <td height="30">Merhaba</td>
+                <td height="30">Hello</td>
+            </tr>
+            
+        </tbody>
+
+        </table>
+        
+    </div>
+
+</body>
+
+<script src="storage.js"></script>
+<script src="ui.js"></script>
+<script src="project.js"></script>
+<script src="fetch.js"></script>
+
+</html>

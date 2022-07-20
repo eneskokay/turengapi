@@ -1,0 +1,222 @@
+* {
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+body {
+
+background: #F64545;
+background: -webkit-linear-gradient(top left, #F64545, #3501FF);
+background: -moz-linear-gradient(top left, #F64545, #3501FF);
+background: linear-gradient(to bottom right, #F64545, #3501FF);
+background-repeat: no-repeat;
+background-attachment: fixed;
+
+}
+html, body {
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100% !important;
+}
+#growth {
+    width: 100% !important;
+    height: 20% !important;
+}
+.searchRadius {
+    border-radius: 30px !important;
+}
+
+#search-container {
+    height: min-content;
+    border: solid 3px rgb(255,204,0);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    border-radius: 12px;
+}
+
+#search-box {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border-radius:30px;
+    height: 48px;
+    width: 500px;
+    cursor: text;
+}
+
+#table {
+    width: 500px;
+    margin-top: 1rem;
+    border-spacing: 0;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+}
+
+#table thead td:first-child{
+    border-top-left-radius: 10px;
+}
+#table thead td:last-child{
+    border-top-right-radius: 10px;
+}
+#table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+#table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+#table tbody tr:nth-child(even){
+    background-color:white;
+}
+#table tbody tr:nth-child(odd){
+    background-color:rgb(224, 224, 224);
+}
+#table tbody tr:hover{
+    background-color:rgb(202, 202, 202);
+}
+#table tbody tr td:first-child{
+    padding-left: 7px;
+}
+#table thead tr {
+    background-color:rgb(255,204,0);
+}
+#table thead td {
+    border-bottom:2px solid #F64545 !important;
+    font-size: 1.1rem;
+}
+
+
+#search-container:hover{
+    box-shadow: 0px 0px 8px -3px;
+}
+#search-container:focus-within{
+    box-shadow: 0px 0px 8px -3px;
+}
+
+
+#label1 {
+    border-radius:15px;
+    width: 500px !important;
+}
+
+#search-input {
+    background-color: white;
+    border: 0px;
+    width: 95%;
+    font-size: 1rem;
+    height:25px;
+}
+#search-input:focus {
+    outline: none;
+}
+#search-input::placeholder{
+    color: rgb(117, 117, 117);
+    font-size: 1rem;
+}
+#search-path {
+    transform: scale(0.04);
+    fill: rgb(117, 117, 117);
+}
+#search-svg {
+    width: 21px;
+    height: 21px;
+    margin: 0 7px 0 4px;
+}
+
+.none {
+    display: none !important;
+}
+
+.bottom-radius {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom: 0px !important;
+}
+
+.history {
+    width: 500px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.history-content {
+    display: flex;
+    align-items: center;
+    color: rgb(82, 24, 140);
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-size: 1rem !important;
+    padding: 7px 13px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.history-content span {
+    margin-left: 0.8rem;
+}
+.history-svg {
+    width: 17.17px;
+    height: 17.17px;
+}
+
+.history-path {
+    transform: scale(0.9);
+    fill: rgb(117, 117, 117);
+}
+
+#histories {
+
+    width: 100%;
+    margin-bottom: 8px;
+
+}
+
+.history-content:hover{
+    background-color:rgb(242, 242, 242);
+}
+
+#line {
+    background-color:rgb(202, 202, 202);
+    height: 2px;
+    margin: 4px 0px;
+    width: 473px !important;
+}
+.xmark-svg {
+
+display: flex;
+align-items: center;
+justify-content: center;
+    width: 8.56px;
+    height: 8.56px;
+
+}
+.history-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+}
+.history-content-child {
+    display: flex;
+    align-items: center;
+}
+.history-icon:hover {
+    background-color:rgb(227, 227, 227);
+}
+
+.xmark-path {
+    transform: scale(0.02);
+    fill: rgb(117, 117, 117);
+}
+
